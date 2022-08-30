@@ -20,7 +20,7 @@ public class BrandController {
 	@PostMapping(value="/addBrand")
 	public BrandModel insertIntoTable(@RequestBody BrandModel b)
 	{
-		logger.info("addBrand API HIT");
+		logger.info("addBrand API hit");
 		BrandModel  brandModel =brandService.InsertBrand(b);
 		return brandModel;
 		
