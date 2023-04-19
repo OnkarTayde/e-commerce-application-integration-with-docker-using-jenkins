@@ -39,6 +39,7 @@ public class CategoryService
 		List<CategoryModel> cat =new ArrayList<CategoryModel>();
 		categoryRepository.findAll().forEach(cat::add);
 		logger.info("getAllCategory method executed successfully");
+
 		return cat;
 	}
 	
@@ -55,6 +56,7 @@ public class CategoryService
 			if (c.getCategory_name().equals(categoryModel.getCategory_name()))
 			{
 				logger.error("Category already exists with name :- "+categoryModel.getCategory_name());
+
 				throw new AlreadyExistsException("Category already exists with name :- "+categoryModel.getCategory_name());
 
 
@@ -64,7 +66,7 @@ public class CategoryService
 
 				throw new BadRequestException("Category Name Not be Empty");
 
-			}else if(categoryModel.getCategory_name().equals(" "))
+			}else if(categoryModel.getCategory_name().equals(" ") && categoryModel.getCategory_name().equals("  "))
 			{
 				logger.error("Category Name Not be Space");
 			throw new BadRequestException("Category Name Not be Space");
@@ -108,8 +110,7 @@ public class CategoryService
 		List<Object> mylist= new ArrayList<>();
 
 
-		CategoryModel categoryModel=categoryRepository.findById(id)
-				.orElseThrow(()->new NotFoundException("Category Not Exist With Id :- "+id));
+		CategoryModel categoryModel=categoryRepository.findById(id).orElseThrow(()->new NotFoundException("Category Not Exist With Id :- "+id));
 
 		mylist.add(categoryModel);
 		List<BrandModel>bList= brandRepository.findAll();
@@ -144,6 +145,7 @@ public class CategoryService
 		List<CategoryModel>cList=categoryRepository.findAll();
 		List<BrandModel>bList=brandRepository.findAll();
 		List<ProductModel>pList=productRepository.findAll();
+
 		
 		for(CategoryModel c:cList)
 		{
@@ -205,8 +207,6 @@ public class CategoryService
 								productRepository.deleteById(p.getProduct_id());
 								brandRepository.deleteById(b.getBrand_id());
 								categoryRepository.deleteById(id);
-
-
 
 							}
 						}

@@ -45,8 +45,11 @@ public class GlobalException extends RuntimeException{
         ErrorResponse errorResponse=new ErrorResponse();
         errorResponse.setMassage(msg);
 
+
         return  ResponseEntity.status(HttpStatus.OK).body(errorResponse);
     }
+
+
 
 
 }

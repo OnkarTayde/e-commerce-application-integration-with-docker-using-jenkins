@@ -8,4 +8,43 @@
 		<list key="ENABLED_TRANSFERS">
 		</list>
 	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\hp12p\OneDrive\Desktop\new dataflow\GCPDataFlow"/>
+			<item value="C:\Users\hp12p\OneDrive\Desktop\new dataflow\dataflow-demo"/>
+			<item value="D:\Projects\dataflow-pipeline"/>
+			<item value="C:\Users\hp12p\OneDrive\Desktop\apache\src"/>
+			<item value="D:\Projects\apache-beam-java-demo"/>
+			<item value="D:\Projects\gcp-cloudstore-demo"/>
+			<item value="D:\Projects\BigQuery"/>
+			<item value="D:\Projects\gcp-storage-demo"/>
+			<item value="D:\Projects\pub-sub-demo"/>
+			<item value="C:\Users\hp12p\OneDrive\Desktop\cloud demo\api"/>
+			<item value="C:\Users\hp12p\OneDrive\Desktop\api"/>
+			<item value="D:\e-commerce"/>
+			<item value="D:\Projects\docker sample\demo"/>
+			<item value="D:\Project backup\e-commerce\e-commerce"/>
+			<item value="D:\Projects\Backend\e-commerce\e-commerce"/>
+			<item value="D:\cloud mysql\e-commerce-new"/>
+			<item value="C:\Users\hp12p\OneDrive\Desktop\Simple-Deploy"/>
+			<item value="C:\Users\hp12p\OneDrive\Desktop\ee-commerce"/>
+			<item value="C:\Users\hp12p\OneDrive\Desktop\e-commerceq"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="828"/>
+		<item key="DIALOG_HEIGHT" value="482"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
 </section>
