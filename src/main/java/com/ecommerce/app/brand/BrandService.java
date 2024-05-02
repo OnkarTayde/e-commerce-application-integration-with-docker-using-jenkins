@@ -73,6 +73,9 @@ public class BrandService
 		List<BrandModel> brandlist =new ArrayList<BrandModel>();
 		brandRepository.findAll().forEach(brandlist::add);
 		logger.info("getAllBrand method executed successfully");
+		logger.info("getAllBrand method executed successfully");
+		logger.info("getAllBrand method executed successfully");
+
 		
 		return brandlist;
 		
