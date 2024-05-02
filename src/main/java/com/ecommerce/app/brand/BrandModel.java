@@ -9,10 +9,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 @Component
@@ -21,15 +18,26 @@ import javax.persistence.Table;
 @Table(name="Brand")
 public class BrandModel
 {
+	@javax.persistence.Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@Column(name = "id", nullable = false)
+	private Long id;
+
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private int brand_id;
 	private String brand_name;
 	private int categoryId;
-	 
-	
 
-	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
 	public BrandModel() {
 		super();
 		

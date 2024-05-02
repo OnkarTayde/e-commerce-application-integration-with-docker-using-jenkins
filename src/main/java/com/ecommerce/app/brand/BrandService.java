@@ -22,7 +22,7 @@ import com.ecommerce.app.category.CategoryRepository;
 public class BrandService 
 {
 	private  static final Logger logger = LoggerFactory.getLogger(CategoryService.class);
-	private static final Logger loggerr = LoggerFactory.getLogger(CategoryController.class);
+
 	@Autowired
 	BrandRepository brandRepository;
 	
