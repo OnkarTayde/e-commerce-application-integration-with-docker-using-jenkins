@@ -30,7 +30,11 @@ public class CategoryController
 	public CategoryModel addCategory(@RequestBody CategoryModel Cat)
 	{
 		logger.info("addCategory API HIT");
+
+		logger.info("Demo log");
 		return service.insertCategory(Cat);
+
+
 	}
 	
 	@GetMapping("/getAllCategory")
