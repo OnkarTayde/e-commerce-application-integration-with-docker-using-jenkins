@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController 
 {
 	private static final Logger logger = LoggerFactory.getLogger(CategoryController.class);
+	private static final Logger loggerr = LoggerFactory.getLogger(CategoryController.class);
 
 	@Autowired
 	ProductService productService;
