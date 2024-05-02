@@ -40,6 +40,8 @@ public class CategoryService
 		categoryRepository.findAll().forEach(cat::add);
 		logger.info("getAllCategory method executed successfully");
 
+		logger.info("asd");
+
 		return cat;
 	}
 	

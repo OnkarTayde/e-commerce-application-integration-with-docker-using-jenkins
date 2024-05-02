@@ -14,6 +14,7 @@ public class BrandController {
 
 
 	private static final Logger logger = LoggerFactory.getLogger(CategoryController.class);
+	private static final Logger loggerr = LoggerFactory.getLogger(CategoryController.class);
 
 	@Autowired
 	BrandService brandService;
