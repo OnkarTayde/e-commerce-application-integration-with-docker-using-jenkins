@@ -40,9 +40,7 @@ public class ECommerceApplication
 
 		logger.info("ASD");
 
-		logger.info("Onkar");
-		logger.info("Onkar");
-		logger.info("Tayde");
+		logger.info("Hello Team");
 	}
 
 	@Bean
