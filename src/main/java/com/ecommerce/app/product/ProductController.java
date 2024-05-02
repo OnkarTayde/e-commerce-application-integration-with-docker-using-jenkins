@@ -19,6 +19,7 @@ public class ProductController
 {
 	private static final Logger logger = LoggerFactory.getLogger(CategoryController.class);
 
+
 	@Autowired
 	ProductService productService;
 	
