@@ -37,6 +37,8 @@ public class ECommerceApplication
 			e.printStackTrace();
 		}
 		logger.info("Project Started..");
+
+		logger.info("ASD");
 	}
 
 	@Bean
