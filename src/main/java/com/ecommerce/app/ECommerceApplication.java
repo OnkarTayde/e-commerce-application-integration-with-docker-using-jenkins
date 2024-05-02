@@ -39,12 +39,6 @@ public class ECommerceApplication
 		logger.info("Project Started..");
 
 		logger.info("ASD");
-
-
-		logger.info("Onkar");
-		logger.info("Onkar");
-		logger.info("Tayde");
-
 	}
 
 	@Bean
