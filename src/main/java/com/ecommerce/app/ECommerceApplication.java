@@ -37,6 +37,9 @@ public class ECommerceApplication
 			e.printStackTrace();
 		}
 		logger.info("Project Started..");
+		logger.info("Project Started.1");
+		logger.info("Project Started.2");
+		logger.info("Project Started.3");
 	}
 
 	@Bean
